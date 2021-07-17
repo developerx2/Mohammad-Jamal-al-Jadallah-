@@ -1,0 +1,30 @@
+import pyautogui
+
+from time import sleep
+
+
+text = ["hi", "hello", "myBro", "iLoveYou",  "thankYou"]
+
+for x in range(1000):
+    for i in text:
+        pyautogui.write(i)
+        sleep(0.1)
+        pyautogui.press("enter")
+        sleep(0.1)
+        
+        #-------------------------- with another way ---------------------------
+#bot send message 
+
+import pyautogui
+
+from time import sleep
+
+msg = input("Enter your text: ")
+num_msg = eval(input("number of message: "))
+time_msg = eval(input("The time of message: "))
+
+for num in range(num_msg + 1):
+    pyautogui.typewrite(msg)
+    sleep(time_msg)
+    pyautogui.press("enter")
+    sleep(time_msg)
