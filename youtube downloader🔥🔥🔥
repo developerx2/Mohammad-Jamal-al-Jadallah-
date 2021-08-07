@@ -1,0 +1,7 @@
+#---------------------------------------------------youtube downloader----------------------------------------------------------------
+
+from pytube import *
+link = input("Enter The Link: ")
+video = YouTube(link).streams.get_highest_resolution()
+video.download()
+print("Successfully... ")
