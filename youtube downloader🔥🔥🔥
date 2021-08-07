@@ -1,4 +1,8 @@
 #---------------------------------------------------youtube downloader----------------------------------------------------------------
+# Download python 3.9+ and pycharm or visual code or any compiler
+# Go to terminal write this -> pip install pytube 
+
+#Your codes goes here
 
 from pytube import *
 link = input("Enter The Link: ")
