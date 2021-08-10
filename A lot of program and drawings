@@ -1,0 +1,116 @@
+#AmAzIng IdEa, tHis program goal it educate
+
+from turtle import *
+from tkinter import *
+from tkinter import ttk
+
+root = Tk()
+ttk.Label(root, text="Enter Heart").pack()
+entry = ttk.Entry(root)
+but = ttk.Button(root, text= "Run")
+entry.pack()
+but.pack()
+
+def heart():
+    Screen().bgcolor('black')
+    Screen().setup(800,700)
+    width(3)
+    color('red')
+
+    begin_fill()
+    left(48)
+    fd(200)
+    circle(90, 200)
+    left(50)
+    circle(-90, -200)
+    fd(-200)
+    end_fill()
+
+def triangle1():
+    bgcolor('black')
+    color('blue')
+    width(4)
+    goto(50, 60)
+    goto(0, 0)
+    goto(0, 120)
+    goto(50, 60)
+
+def triangle2():
+    bgcolor('black')
+    color('blue')
+    width(4)
+    for i in range(3):
+        fd(160)
+        left(120) #360 / 3 I mean number of reapets in range
+
+def square():
+    bgcolor('black')
+    color('red')
+    width(4)
+    for i in range(4):
+        fd(100)
+        left(90)
+
+def rect():
+    setpos(-150, 0)
+    bgcolor('black')
+    color('red')
+    width(4)
+    for i in range(2):
+        fd(400)
+        left(90)
+        fd(80)
+        left(90)
+
+
+def dots():
+    from random import random
+    bgcolor('black')
+    while True:
+        r = random()
+        g = random()
+        b = random()
+        color(r, g, b)
+        dot(100)
+
+
+
+def spots():
+    from random import random
+    from random import randint
+    bgcolor('black')
+    while True:
+        up()
+        goto(randint(-400, 400), randint(-400, 400))
+        down()
+        r = random()
+        g = random()
+        b = random()
+        color(r, g, b)
+        width(4)
+        dot(randint(10, 100))
+
+def get():
+    e = entry.get()
+    if e == 'heart' or e == 'Heart':
+            but.config(command=heart())
+    if e == 'triangle1' or e == 'Triangle1':
+            but.config(command=triangle1())
+    if e == 'triangle2' or e == 'Triangle2':
+            but.config(command=triangle2())
+    if e == 'square' or e == 'Square':
+            but.config(command=square())
+    if e == 'rect' or e == 'Rect':
+            but.config(command=rect())
+    if e == 'dot' or e == 'Dot':
+            but.config(command=dots())
+    if e == 'spots' or e == 'spot':
+            but.config(command=spots())
+
+but.config(command= get)
+
+
+
+
+
+mainloop()
