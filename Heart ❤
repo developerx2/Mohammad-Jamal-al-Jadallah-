@@ -1,0 +1,18 @@
+from turtle import *
+
+def heart():
+    Screen().bgcolor('black')
+    Screen().setup(800,700)
+    width(3)
+    color('red')
+
+    begin_fill()
+    left(48)
+    fd(200)
+    circle(90, 200)
+    left(50)
+    circle(-90, -200)
+    fd(-200)
+    end_fill()
+
+heart()
