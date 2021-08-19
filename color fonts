@@ -1,0 +1,14 @@
+# pip install colorama
+# this simple code to know how you can change color font and background color 
+ 
+from colorama import Back, Fore
+
+colortop= Back.BLACK
+
+pink = Fore.GREEN
+
+i= 1
+while True:
+    for c in "colortop":
+        print(str(i) + pink + colortop, end=" ")
+        i += 1
