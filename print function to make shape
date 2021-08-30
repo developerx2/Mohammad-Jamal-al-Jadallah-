@@ -1,0 +1,29 @@
+"""
+                                                             -----------------------
+                                                             |     /O\       /O\   |
+                                                             |     ~~~       ~~~   |
+                                                             |                     |
+                                                             |          ~~         |
+                                                             |         /oo\        |
+                                                             |                     |
+                                                             |     \__________/    |
+                                                             |                     |
+                                                             -----------------------
+
+"""
+
+# try it now just to learn 🌪
+# we use print function to print string and number and we can use inside it operation lik + - * and we can put comma between things inner it
+# so try this and you will done with print()
+
+print("-----------------------")
+print('|', '    /O\       /O\\', ' ' * 2  + '|' )
+print('|', '    ~~~       ~~~ ', ' '  + '|' )
+print('|', ' ' * 20 + '|' )
+print('|','         ~~', ' ' * 8 + '|' )
+print('|', '        /oo\\', ' ' * 7 + '|' )
+print('|', ' ' * 20 + '|' )
+print('|', '    \__________/', ' ' * 3 + '|' )
+print('|', ' ' * 20 + '|' )
+print("-----------------------")
+
