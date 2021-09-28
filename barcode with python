@@ -1,0 +1,17 @@
+# pip install python_barcode
+
+#import library
+
+from barcode import EAN13
+
+# any numbers you want
+
+num = '45256256646385' 
+
+# the function to create barcode 
+
+b =EAN13(num) 
+
+# save barcode as svg
+
+b.save('title' )
