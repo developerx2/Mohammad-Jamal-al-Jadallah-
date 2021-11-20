@@ -1,0 +1,38 @@
+# This is a simple lesson you will learn how to draw 
+# Square and triangle, rectangle, circle
+
+from turtle import *
+
+width(10)
+
+color('red')
+
+# This to draw triangle
+for i in range(3):
+    fd(200)
+    left(120)
+
+# this to clear previuos shape
+clear()
+
+# This to draw Square
+for c in range(4):
+    fd(200)
+    left(90)
+
+clear()
+# This to draw circle
+circle(100)
+
+setpos(0, 100)
+clear()
+
+# This to draw rect
+for n in range(2):
+    fd(200)
+    right(90)
+    fd(300)
+    right(90)
+
+# This to make the screen is fixed
+done()
